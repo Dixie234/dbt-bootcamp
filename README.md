@@ -1,0 +1,1 @@
+dbt project for following along with dbt bootcamp Udemy course - https://www.udemy.com/course/complete-dbt-data-build-tool-bootcamp-zero-to-hero-learn-dbt/
