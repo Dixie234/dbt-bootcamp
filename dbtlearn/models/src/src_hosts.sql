@@ -4,4 +4,4 @@ select
     is_superhost,
     created_at,
     updated_at
-from demo_dbt.airbnb.raw_hosts
+from {{ source('demo_dbt', 'hosts') }}

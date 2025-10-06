@@ -4,4 +4,4 @@ select
     reviewer_name,
     comments as review_text,
     sentiment as review_sentiment
-from demo_dbt.airbnb.raw_reviews
+from {{ source('demo_dbt', 'reviews') }}
