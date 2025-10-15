@@ -1,0 +1,16 @@
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://09557202.us2a.app.preset.io/superset/dashboard/8/?native_filters_key=NrHjsueMgTo0fMY64410_tfsgI3rBi1T7DIcHA8Fumv5W3KAAzjjnZbxsdoQBBEo
+    description: Executive Dashboard about Airbnb listings and hosts
+
+    depends_on:
+      - ref('dim_hosts_cleansed')
+      - ref('dim_listings_cleansed')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Guy Dixon
+      email: dbtstudent@gmail.com

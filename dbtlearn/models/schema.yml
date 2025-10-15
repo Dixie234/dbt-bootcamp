@@ -36,4 +36,7 @@ models:
         description: Name of the host.
       - name: is_superhost
         description: Is the host a super host.
-
+  - name: dim_listings_with_hosts
+    tests:
+      - dbt_expectations.expect_table_row_count_to_equal_other_table:
+          compare_model: source('demo_dbt', 'listings')
